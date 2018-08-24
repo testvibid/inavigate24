@@ -2,18 +2,18 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
+        id        = "uk.co.wavesandmeans.orals"
         versionCode = "35100"
         android-versionCode="35100"
         version   = "3.5.1">
-    <name>Moodle</name>
+    <name>iMaritime</name>
 
     <description>
-        Moodle official app
+         Official App for iMaritime
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
-        Moodle Mobile team
+   <author href="http://www.vibidsoft.com" email="harshil@vibidsoft.com">
+       Harshil Shah Vibidsoft
     </author>
 
     <edit-config target="CFBundleShortVersionString" file="*-Info.plist" mode="merge">
@@ -21,7 +21,6 @@
     </edit-config>
 
     <gap:platform name="ios" />
-    <gap:platform name="android" />
 
     <access origin="*" />
     <access origin="tel:*" launch-external="yes" />
@@ -59,7 +58,6 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="SplashScreenDelay" value="15000" />
-    <preference name="SplashShowOnlyFirstTime" value="false" />
 
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" onload="true"/>
@@ -124,7 +122,6 @@
         <splash src="resources/ios/splash/Default~iphone.png" width="320" height="480"/>
         <splash src="resources/ios/splash/Default-Landscape@~ipadpro.png" width="2732" height="2048"/>
         <splash src="resources/ios/splash/Default-Portrait@~ipadpro.png" width="2048" height="2732"/>
-        <splash src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" height="2732"/>
     </platform>
 
     <gap:plugin name="cordova-plugin-camera" source="npm" />
@@ -164,13 +161,13 @@
     <preference name="permissions" value="none"/>
 
     <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-        <string>We need camera access to take pictures so you can attach them as part of your submissions.</string>
+        <string>need camera access to take pictures</string>
     </edit-config>
     <edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
-        <string>We need microphone access to record sounds so you can attach them as part of your submissions.</string>
+        <string>need microphone access to record sounds</string>
     </edit-config>
     <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
-        <string>We need photo library access to get pictures from there so you can attach them as part of your submissions.</string>
+        <string>need to photo library access to get pictures from there</string>
     </edit-config>
 
     <config-file target="*-Info.plist" parent="CFBundleDocumentTypes">
